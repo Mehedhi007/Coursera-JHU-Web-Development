@@ -1,0 +1,133 @@
+/* CSS Document */
+
+
+*{	
+	box-sizing:border-box;
+	padding: 0;
+	margin: 0;
+	
+}
+
+
+body{
+	width:90%;
+	margin: 0 auto;
+	background-image:url(Chocolates.jpg);
+
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	color: white;
+	
+	
+}
+
+
+/***** Page heading *****/
+h1{
+	color:black;
+	text-align:center;
+	font-size:175%;
+	padding: 10px;
+	margin: 10px;
+	margin-bottom:20px;
+}
+
+
+/**** Titles *****/
+h2{	
+	text-align:center;
+	font-size:125%;
+	width:250px;
+	border:2px solid black;
+	padding:5px;
+	padding-left:20px;
+	padding-right:20px;
+	float:right;
+}
+
+h2.milk{
+	background-color:#369;
+}
+
+
+h2.white{
+	background-color:#303;
+}
+	
+h2.dark{
+	background-color:#003;
+}
+	
+
+/***** Content Box *****/
+
+div{	
+	
+	float: left;
+	width:31.3%;
+	border: 2px solid black;
+	border-radius: 10px;
+	margin: 1%;
+	background-color:#C99;
+	overflow:auto;
+	
+}
+
+p{
+	padding : 10px;
+	margin-top: 50px;
+		
+}
+
+/****** Desktop Sizing ******/
+@media screen and (min-width:992px){
+	body{
+		width:90%;
+	}
+	div{
+		float: left;
+		width:31.3%;
+	}
+
+}
+
+/****** Tablet Sizing*******/
+@media(min-width:768px) and (max-width:991px){
+	body{
+		width:90%;
+	}
+	div.milk{
+		width:45%;
+	}
+	
+	div.white{
+		width:45%;
+	}
+	
+	div.dark{
+		width:92%;
+	}
+
+}
+
+
+/******* Mobile Sizing ******/
+@media(max-width:767px){
+	body{
+		width:90%;
+	}
+	div.milk{
+		width:90%;
+	}
+	
+	div.white{
+		width:90%;
+	}
+	
+	div.dark{
+		width:90%;
+	}
+
+}
+
+
+
